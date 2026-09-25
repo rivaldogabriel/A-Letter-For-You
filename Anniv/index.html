@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A LETTER FOR YOU</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         PIN SCREEN
+    ========================== -->
+
+    <div id="pinScreen" class="pin-screen">
+
+        <div class="pin-box">
+
+            <div class="pin-heart">♥</div>
+
+            <p class="small-title">OUR SECRET PLACE</p>
+
+            <h1>Just For Us</h1>
+
+            <p class="pin-description">
+                Kalo salah berarti udah gak sayang
+            </p>
+
+            <div class="pin-dots">
+
+                <span class="pin-dot"></span>
+                <span class="pin-dot"></span>
+                <span class="pin-dot"></span>
+                <span class="pin-dot"></span>
+                <span class="pin-dot"></span>
+                <span class="pin-dot"></span>
+
+            </div>
+
+            <p id="pinError" class="pin-error">
+                KOK SALAH SIH, UDAH GAK SAYANG INI FIX:<
+            </p>
+
+            <div class="keypad">
+
+                <button class="key" data-key="1">1</button>
+                <button class="key" data-key="2">2</button>
+                <button class="key" data-key="3">3</button>
+
+                <button class="key" data-key="4">4</button>
+                <button class="key" data-key="5">5</button>
+                <button class="key" data-key="6">6</button>
+
+                <button class="key" data-key="7">7</button>
+                <button class="key" data-key="8">8</button>
+                <button class="key" data-key="9">9</button>
+
+                <button class="key empty"></button>
+                <button class="key" data-key="0">0</button>
+                <button class="key backspace" data-key="backspace">⌫</button>
+
+            </div>
+
+            <p class="pin-hint">
+                12 • 12 • 25
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         MAIN WEBSITE
+    ========================== -->
+
+    <main id="mainContent" class="hidden">
+
+
+        <!-- =========================
+             NAVIGATION
+        ========================== -->
+
+        <nav class="navbar">
+
+            <div class="nav-logo">
+                <span>♥</span>
+                Our Story
+            </div>
+
+            <div class="nav-links">
+
+                <a href="#home">Home</a>
+                <a href="#journey">Journey</a>
+                <a href="#memories">Memories</a>
+                <a href="#letter">Letter</a>
+
+            </div>
+
+        </nav>
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section id="home" class="hero">
+
+            <div class="hero-background"></div>
+
+            <div class="hero-content reveal">
+
+                <p class="eyebrow">
+                    TO MY FAVORITE PERSON
+                </p>
+
+                <h1>
+                    Our Love<br>
+                    <span>Story.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Dua hati, satu cerita, dan begitu banyak
+                    alasan untuk tetap memilih satu sama lain.
+                </p>
+
+                <a href="#journey" class="main-button">
+                    Lihat perjalanan kita
+                    <span>↓</span>
+                </a>
+
+            </div>
+
+            <div class="hero-photo reveal">
+
+                <div class="photo-frame">
+
+                    <!-- GANTI FOTO INI -->
+                    <img src="images/gambar 1.jpeg" alt="Foto kita">
+
+                </div>
+
+                <div class="photo-caption">
+                    <span>Since</span>
+                    12.12.2025
+                </div>
+
+            </div>
+
+            <div class="scroll-indicator">
+                Scroll to explore ↓
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MUSIC PLAYER
+        ========================== -->
+
+        <div class="music-player">
+
+            <div class="music-icon">
+                ♪
+            </div>
+
+            <div class="music-info">
+
+                <span>OUR SONG</span>
+
+                <strong>
+                    Lagu Kita
+                </strong>
+
+                <div class="progress-container">
+
+                    <div id="progressBar" class="progress-bar"></div>
+
+                </div>
+
+                <div class="music-time">
+                    <span id="currentTime">0:00</span>
+                    <span id="duration">0:00</span>
+                </div>
+
+            </div>
+
+            <div class="music-controls">
+
+                <button id="restartMusic">
+                    ↺
+                </button>
+
+                <button id="playMusic" class="play-button">
+                    ▶
+                </button>
+
+                <button id="muteMusic">
+                    ♫
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- AUDIO -->
+
+        <audio id="music">
+
+            <source src="Edd_Sheeran_-_Perfect_(mp3.pm).mp3" type="audio/mpeg">
+
+        </audio>
+
+
+        <!-- =========================
+             JOURNEY
+        ========================== -->
+
+        <section id="journey" class="section journey-section">
+
+            <div class="section-heading reveal">
+
+                <p class="eyebrow">
+                    OUR JOURNEY
+                </p>
+
+                <h2>
+                    Dari awal,
+                    <span>hingga selamanya.</span>
+                </h2>
+
+                <p>
+                    Setiap hubungan punya cerita.
+                    Ini adalah bagian kecil dari cerita kita.
+                </p>
+
+            </div>
+
+
+            <div class="timeline">
+
+
+                <!-- ITEM 1 -->
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-date">
+                        12 DEC 2025
+                    </div>
+
+                    <div class="timeline-line">
+                        <span></span>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            The Beginning
+                        </h3>
+
+                        <p>
+                            Hari ketika cerita kita benar-benar
+                            dimulai. Sebuah tanggal yang sekarang
+                            memiliki arti yang berbeda.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ITEM 2 -->
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-date">
+                        OUR FIRST
+                    </div>
+
+                    <div class="timeline-line">
+                        <span></span>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            Banyak Hal Pertama
+                        </h3>
+
+                        <p>
+                            Pertama kali tertawa bersama,
+                            pertama kali saling mengenal lebih jauh,
+                            dan banyak momen kecil yang akhirnya
+                            menjadi kenangan besar.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ITEM 3 -->
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-date">
+                        EVERY DAY
+                    </div>
+
+                    <div class="timeline-line">
+                        <span></span>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            Growing Together
+                        </h3>
+
+                        <p>
+                            Tidak selalu sempurna, tetapi kita
+                            selalu belajar untuk memahami,
+                            memaafkan, dan tumbuh bersama.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ITEM 4 -->
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-date">
+                        FOREVER
+                    </div>
+
+                    <div class="timeline-line">
+                        <span></span>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            To Be Continued...
+                        </h3>
+
+                        <p>
+                            Cerita kita belum selesai.
+                            Masih banyak tempat untuk dikunjungi,
+                            tawa untuk dibagikan, dan kenangan
+                            yang akan kita buat.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MEMORIES
+        ========================== -->
+
+        <section id="memories" class="section memories-section">
+
+            <div class="section-heading reveal">
+
+                <p class="eyebrow">
+                    OUR MEMORIES
+                </p>
+
+                <h2>
+                    Little moments,
+                    <span>big memories.</span>
+                </h2>
+
+                <p>
+                    Beberapa momen kecil yang selalu ingin
+                    kita ingat.
+                </p>
+
+            </div>
+
+
+            <div class="gallery">
+
+
+                <div class="gallery-item large reveal">
+
+                    <img src="images/gambar 2.jpeg" alt="Memory 1">
+
+                    <div class="gallery-overlay">
+                        <span>Memory #01</span>
+                    </div>
+
+                </div>
+
+
+                <div class="gallery-item reveal">
+
+                    <img src="images/gambar 3.jpeg" alt="Memory 2">
+
+                    <div class="gallery-overlay">
+                        <span>Memory #02</span>
+                    </div>
+
+                </div>
+
+
+                <div class="gallery-item reveal">
+
+                    <img src="images/gambar 4.jpeg" alt="Memory 3">
+
+                    <div class="gallery-overlay">
+                        <span>Memory #03</span>
+                    </div>
+
+                </div>
+
+
+                <div class="gallery-item wide reveal">
+
+                    <img src="images/gambar 6.jpeg" alt="Memory 4">
+
+                    <div class="gallery-overlay">
+                        <span>Memory #04</span>
+                    </div>
+
+                </div>
+
+
+                <div class="gallery-item reveal">
+
+                    <img src="images/gambar 5.jpeg" alt="Memory 5">
+
+                    <div class="gallery-overlay">
+                        <span>Memory #05</span>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             LOVE LETTER
+        ========================== -->
+
+        <section id="letter" class="letter-section">
+
+            <div class="letter-container reveal">
+
+                <div class="letter-top">
+
+                    <span>♡</span>
+
+                    <p>
+                        A LETTER FOR MY BEAUTIFUL GIRLFRIEND
+                    </p>
+
+                    <span>♡</span>
+
+                </div>
+
+
+                <h2>
+                    Untuk kamu,
+                </h2>
+
+
+                <div class="letter-text">
+
+                    <p>
+                        Terima kasih karena sudah menjadi bagian
+                        dari hidupku.
+                    </p>
+
+                    <p>
+                        Aku mungkin belum jadi yang terbaik buat kamu
+                        tapi satu hal yang pasti, Aku pengen terus bareng kamu,
+                        pengen bertumbuh bareng kamu, dan melakukan banyak hal bareng
+                        kamu.
+                    </p>
+
+                    <p>
+                        Dari semua yang udah kita berdua lewati,
+                        aku belajar bahwa cinta bukan hanya tentang
+                        hari-hari yang indah. Cinta juga tentang
+                        tetap memilih satu sama lain ketika
+                        keadaan tidak selalu mudah.
+                    </p>
+
+                    <p>
+                        Semoga kita terus punya banyak cerita,
+                        banyak tawa, banyak foto, dan banyak
+                        alasan untuk berkata,
+                        "Untung kita bertemu."
+                    </p>
+
+                    <p class="signature">
+                        With all my love,
+                        <br>
+                        <span>♥ Your boyfriend</span>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             RELATIONSHIP COUNTER
+        ========================== -->
+
+        <section class="counter-section">
+
+            <div class="section-heading reveal">
+
+                <p class="eyebrow">
+                    OUR TIME
+                </p>
+
+                <h2>
+                    Together for
+                </h2>
+
+            </div>
+
+
+            <div class="counter reveal">
+
+                <div class="counter-box">
+
+                    <strong id="years">
+                        0
+                    </strong>
+
+                    <span>
+                        Years
+                    </span>
+
+                </div>
+
+
+                <div class="counter-divider">
+                    :
+                </div>
+
+
+                <div class="counter-box">
+
+                    <strong id="months">
+                        0
+                    </strong>
+
+                    <span>
+                        Months
+                    </span>
+
+                </div>
+
+
+                <div class="counter-divider">
+                    :
+                </div>
+
+
+                <div class="counter-box">
+
+                    <strong id="days">
+                        0
+                    </strong>
+
+                    <span>
+                        Days
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <p class="counter-note reveal">
+                and counting... ♡
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             FOREVER
+        ========================== -->
+
+        <section class="forever-section">
+
+            <div class="forever-content reveal">
+
+                <span class="big-heart">
+                    ♥
+                </span>
+
+                <p class="eyebrow">
+                    ONE LAST THING
+                </p>
+
+                <h2>
+                    I choose you.
+                    <br>
+                    <span>Again and again.</span>
+                </h2>
+
+                <p>
+                    Today, tomorrow, dan setiap hari setelahnya.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
+
+        <footer>
+
+            <div>
+                Made with
+                <span>♥</span>
+                for the person I love.
+            </div>
+
+            <div>
+                12.12.2025 — ∞
+            </div>
+
+        </footer>
+
+
+    </main>
+
+
+    <!-- =========================
+         FLOATING HEARTS
+    ========================== -->
+
+    <div id="hearts-container"></div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
